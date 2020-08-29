@@ -1,0 +1,65 @@
+What is Ionic?
+
+Dev Machine Setup
+Ionic CLI
+    Ref: https://ionicframework.com/docs/intro/cli
+    npm install -g @ionic/cli 
+
+Create first ionic project
+    ionic start 
+    Start Ionic app (ionic serve)
+
+File Walkthrough
+Architecture 
+How Ionic Apps are bootstrapping 
+Ionic Core Framework
+Capacitor or Cordova
+Ionic Versions 
+----
+    Ionic 1 on top of Angular JS version 1.x 
+
+    Ionic 2 on top of Angular 2 
+    Ionic 3 on top of Angular 4 
+
+    Ionic 4 ( can write apps in JS, Angular, React, VueJS )
+    Ionic 5 ( can write apps in JS, Angular, React, VueJS )
+
+Ionic Building Blocks
+--
+    Ionic UI Components
+    styling 
+    Routing
+    State Management (to send data across multiple pages)
+    Capacitor (to access device's native features)
+
+=======
+First Screen
+--
+ion-app
+    ion-header
+        ion-toolbar (Refer ion-toolbar docs )
+            ion-title    App Name or Page name  (Refer ion-title docs )
+    ion-content
+        ion-card  (Refer ion-card docs)
+
+
+Work with Grid
+Work with card
+Work with Ion-icons
+
+
+Working with CSS / SCSS (Quick intro to SCSS)
+(Refer: https://ionicframework.com/docs/layout/css-utilities)
+Try out form fields 
+Work with ion-fab 
+Work with ion-list
+
+Basic Routing 
+Work with popover demo 
+
+
+
+
+
+
+

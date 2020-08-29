@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Solutions</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="information-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-text-center">
+    <ion-label>Our Solutions</ion-label>
+  </p>
+  
+  <ion-list>
+    <!-- todo: find out index and display the index inside h3 below -->
+    <ion-item *ngFor='let solution of solutionList'>
+      <ion-icon slot="start" name={{solution.iconName}}></ion-icon>
+      <ion-label>
+        <h3>  {{solution.solutionName}}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

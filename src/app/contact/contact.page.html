@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="secondary" class="ion-text-center">
+    <h1>Reach us thru the Form</h1>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Enter Name</ion-label>
+      <ion-input #nameInput type='text' placeholder='Enter Name'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Enter Email</ion-label>
+      <ion-input #emailInput type='email' placeholder='Enter Email'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Enter Query</ion-label>
+      <ion-textarea #queryInput placeholder="Enter more information here..."></ion-textarea>
+    </ion-item>
+    
+    <ion-button expand="block" (click)='querySubmitHandler(nameInput.value, emailInput.value, queryInput.value)'>Submit Query</ion-button>
+    
+  </ion-list>
+</ion-content>
